@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables
+.env
+
+# Database files
+links.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+*.tmp
+
+# IDE specific files
+.vscode/
+.idea/
+.DS_Store
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+links.db

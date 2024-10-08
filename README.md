@@ -51,23 +51,12 @@ $ pnpm run start:prod
 # unit tests
 $ pnpm run test
 
-# e2e tests
-$ pnpm run test:e2e
-
 # test coverage
 $ pnpm run test:cov
 ```
 
-## Support
+## Consideraciones
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+* Para la base de datos se usa un archivo mondo db local por lo mismo. Mismo podía ser un sqlite. El archivo generado está incluído en el .gitignore por lo que por cada deploy futuro el archivo generado no es sobre-escrito, incluso se pueden hacer copiar de seguridad en caliente.
+* Para la generación del código al azar pensaba usar nanoid pero decidí implementar un algoritmo mas simple.
+* El gestor de paquetes de preferencia es pnpm. Lo elijo porque es mas rápido ya que paraleliza la descargas, y entornos mac y linux genera enlaces simbólicos en dependencias repetidas.
